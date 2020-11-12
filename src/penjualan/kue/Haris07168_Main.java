@@ -8,12 +8,13 @@ public class Haris07168_Main {
 
     static ArrayList<Haris07168_Pembelian> Haris07168_datapembelian = new ArrayList();
     static Scanner Haris07168_input = new Scanner(System.in);
-    static String Haris07168_datakue;
-    static float Haris07168_harga;
+    static SimpleDateFormat Haris07168_tglskrg = new SimpleDateFormat("dd-MMM-yyyy ");
 
     public static void main(String[] args) {
         System.out.println("Cookie Store Here !!");
         int Haris07168_pilih, Haris07168_jum, Haris07168_menu;
+        String Haris07168_datakue;
+        float Haris07168_harga;
         System.out.println(" Menu");
         for (int i = 0; i < Haris07168_Kue.Haris07168_namakue.length; i++) {
             System.out.println(Haris07168_Kue.Haris07168_namakue[i]);
@@ -143,7 +144,6 @@ public class Haris07168_Main {
     }
 
     static void Haris07168_isikeranjang() {
-        SimpleDateFormat Haris07168_tglskrg = new SimpleDateFormat("dd-MMM-yyyy ");
         System.out.println("ISI DALAM KERANJANG");
         System.out.println("=======================");
         float total = 0;
